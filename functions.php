@@ -8,6 +8,7 @@ function displayAuthor(string $authorEmail, array $users): string
     }
     return 'Auteur inconnu';
 }
+
 function isValidRecipe(array $recipe): bool
 {
     if (array_key_exists('is_enabled', $recipe)) {
@@ -16,10 +17,8 @@ function isValidRecipe(array $recipe): bool
         $isEnabled = false;
     }
 
-
     return $isEnabled;
 }
-
 
 function getRecipes(array $recipes): array
 {
